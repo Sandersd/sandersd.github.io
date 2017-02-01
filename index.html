@@ -1,1 +1,419 @@
-yo
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+    <title>Dylan M. Sanders</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dylan M. Sanders">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css"
+/>
+    <!-- github acitivity css -->
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- ******HEADER****** -->
+    <header class="header">
+        <div class="container">
+            <img class="profile-image img-responsive pull-left" src="assets/images/profile.gif" alt="Dylan M. Sanders" />
+            <div class="profile-content pull-left">
+                <h1 class="name">Dylan M. Sanders</h1>
+                <h2 class="desc">Full-Stack Developer</h2>
+                <ul class="social list-inline">
+                    <li><a href="https://twitter.com/DylanMSanders" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/Sandersd" target="_blank"><i class="fa fa-github-alt"></i></a></li>
+                    <li><a href="https://medium.com/@DylanMSanders" target="_blank"><i class="fa fa-medium"></i></a></li>
+                    <li class="last-item" target="_blank"><a href="https://www.linkedin.com/in/dylanmsanders" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary pull-right" href="mailto:sandersd27@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>
+        </div><!--//container-->
+    </header><!--//header-->
+
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-md-8 col-sm-12 col-xs-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>Hey there! My name is Dylan Sanders and I'm a Developer, Feminist, Francophile, Piña Colada Enthusiast, and R. Kelly SuperFan. Currently, I'm in love with <a href="https://www.meteor.com/" target="_blank">Meteor.js</a> and Python with special interests in AI/ML/NLP/CV and other acrynoms.</p>
+
+        <p>When I'm not staring at a computer screen all day I enjoy music, comedy, traveling, fitness, and painting. I studied in Paris for a year and fell in love with the city so I like to split my time between there, Orange County, and San Francisco.</p>
+        <p>
+          Also, I love puns and gifs. I hope that doesn't <i><b>change</b></i> your <i><b>image</b></i> of me...
+        </p>
+        <p>
+          (not funny, I know. I'm sorry)
+        </p>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">
+
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://github.com/Sandersd/I-Tinny" target="_blank">itinity - Meteor</a></h3>
+                                <p class="summary"></p>
+                                <div class="featured-image">
+                                    <a href="https://github.com/Sandersd/I-Tinny" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/itinity2.jpg" alt="project name" id='featured-pic'/>
+                                    </a>
+                                    <div class="ribbon" onclick="changePic()">
+                                        <div class="text">Next</div>
+                                        </div>
+                                    </div>
+                                    <script>
+                                    function changePic() {
+                                      var img = document.getElementById('featured-pic').src;
+                                          if (img.indexOf('assets/images/projects/itinity1.jpg')!=-1) {
+                                              document.getElementById('featured-pic').src  = 'assets/images/projects/itinity2.jpg';
+                                          }
+                                           else {
+                                             document.getElementById('featured-pic').src = 'assets/images/projects/itinity1.jpg';
+                                         }
+
+                                       }
+                                    </script>
+
+                                <div class="desc text-left">
+                                    <p>itinity is a personalized itinerary generator that plans your trip based around your interests and local businesses in the area. I made this with a team using Meteor and APIs from Soleo, Sabre, Just API, and Traitify.</p>
+                                    <p>A user takes a simple personality test that displays two images at a time each representing a different personality trait. Once the results are calculated, itinity shows the user their most apparent traits and allows the user to input the date and location of their desired adventure. From those factors, we create specific itineraries including the local businesses that the user would most likely want to visit.</p>
+                                </div><!--//desc-->
+                                <a class="btn btn-cta-secondary" href="https://github.com/Sandersd/I-Tinny" target="_blank"><i class="fa fa-github-alt"></i> View on GitHub</a>
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/I-m-Home-Safe" target="_blank">
+                                <img class="img-responsive project-image" src="assets/images/projects/homesafe.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/I-m-Home-Safe" target="_blank">I'm Home Safe - Meteor</a></h3>
+                                    <p>An app that uses Estimote Beacons to automatically send a text to a loved one once you arrive home safely after a night out. I'm Home Safe earned “Best use of Estimotes” Award at BattleHack London 2015.</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/I-m-Home-Safe" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/Twemoji" target="_blank">
+                                <img class="img-responsive project-image" src="https://i.gyazo.com/5465aa178b62820f98aeb66d59b88ad6.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/Twemoji" target="_blank">Twemoji - Meteor</a></h3>
+                                    <p>Twemoji pulls random tweets from a stream and then performs sentiment analysis and assigns an emoji based on the score. There is also a very nice spinning globe made with D3.js</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/Twemoji" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/Hotline-Bling-Terminal" target="_blank">
+                                <img class="img-responsive project-image" src="https://i.gyazo.com/cf0335b9ad459695c7f0b45bb60beff1.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/Hotline-Bling-Terminal" target="_blank">Hotline Bling Terminal - Python</a></h3>
+                                    <p>Python script to display a scrolling banner that reads 'HOTLINE BLING' in asterik letters. If Drake was a programmer, he would run this on start up.</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/Hotline-Bling-Terminal" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/Scrolling-with-Pen" target="_blank">
+                                <img class="img-responsive project-image" src="https://i.gyazo.com/9078b27c6ce8b3d39bf3d4b473953c0c.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/Scrolling-with-Pen" target="_blank">Pink Scroller - Meteor</a></h3>
+                                    <p>A fun little project that uses tracking.js to scroll down the page when you drag a magenta object in front of the camera. It takes the y-axis of the object in the video screen and mirrors that percentage to scroll up or down the page.</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/Scrolling-with-Pen" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/Sticky-Notes" target="_blank">
+                                <img class="img-responsive project-image" src="https://i.gyazo.com/9d226574a288c668d31e7a33b74c66b9.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/Sticky-Notes" target="_blank">Sticky Notes - Meteor</a></h3>
+                                    <p>A productivity web app similar to Trello for organizing virtual "sticky notes" using drag and drop.</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/Sticky-Notes" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/Pysetta" target="_blank">
+                                <img class="img-responsive project-image" src="https://i.gyazo.com/6cfb35fd81b86937b8e0862ffc8a1ac5.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/Pysetta" target="_blank">Pysetta(Stone) - Python</a></h3>
+                                    <p>A script that will quiz me on a random phrase every time I open a new terminal. It pulls from a text file in the format question=answer so it can be used for anything that follows that structure. For French, I thought it would be nice to hear the correct pronunciation as I learned the phrases so I set up text to speech with Pyvona.</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/Pysetta" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" href="https://github.com/Sandersd/Calendar-App" target="_blank">
+                                <img class="img-responsive project-image" src="https://i.gyazo.com/4a219d4e5abdf06712733c821a2f7e26.gif" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a href="https://github.com/Sandersd/Calendar-App" target="_blank">Calendar - Meteor</a></h3>
+                                    <p>A simple Calendar app that allows users to create edit and delete tasks.</p>
+                                    <p><a class="more-link" href="https://github.com/Sandersd/Calendar-App" target="_blank"><i class="fa fa-external-link"></i> See the code</a></p>
+                                </div><!--//desc-->
+                            </div><!--//item-->
+                          <a class="btn btn-cta-secondary" href="https://github.com/Sandersd/" target="_blank">More on GitHub <i class="fa fa-chevron-right"></i></a>
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+
+                            <div class="item">
+                                <h3 class="title"> Full-stack Meteor Developer and Technical Lead - <span class="place">Village.fm</span> <span class="year">(Summer 2015 - Present)</span></h3>
+                                <p>I'm a solo developer working for a new music startup that allows users to post songs in a communal playlist and discuss with likeminded fans. I built the prototype and beyond from scratch with Meteor while utilizing the Soundcloud and Youtube API's.</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Full-stack Meteor Developer - <span class="place"><a href="http://www.swch.com/" target="_blank">SWCH</a></span> <span class="year">(Jan 2016 - Present)</span></h3>
+                                <p>I work with a team of developers to build out a custom e-commerce platform that allows retailers and distributors to purchase e-liquid and other nicotine products not available on Amazon or Ebay. I contribute to the core features such as checkout and user authentication.</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Full-stack Meteor Developer - <span class="place"><a href="http://foodful.ly/" target="_blank">Foodful.ly</a></span> <span class="year">(Summer 2015 - Present)</span></h3>
+                                <p>I work with a team of developers to build a hybrid mobile app using Meteor that calculates when food spoils and provides users with reminders and recipes to use before their food goes bad. I build upon and add core features as well as implement a variety of third-party smart packages from <a href="https://atmospherejs.com/" target="_blank">Atmosphere.js</a></p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Full-stack Meteor Developer - <span class="place"><a href="http://oak.works/" target="_blank">Oak.Works</a></span> <span class="year">(Summer 2015 - Winter 2015)</span></h3>
+                                <p>I worked with a team of two other developers at their development firm, building web apps with Meteor for various clients. I contributed new features and bug fixes to existing projects.</p>
+                            </div><!--//item-->
+
+                            <div class="item">
+                                <h3 class="title">Co-founder and Technical Lead - <span class="place">U-Path</span> <span class="year">(Summer 2015 - Winter 2015)</span></h3>
+                                <p>I co-founded and developed a hybrid mobile app that allows users to draw custom routes on a map that they can then share with friends to help them navigate where Google maps can't. I planned business and marketing strategies with a team of one product manager and two marketers. I also developed the MVP from scratch with Meteor.</p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Java Class Instructor - <span class="place"><a href="https://www.idtech.com/" target="_blank">iDTech</a></span> <span class="year">(Summer 2014)</span></h3>
+                                <p>I taught classes on the basics of Java programming to school children in a Computer Science summer camp. I planned and implemented original curriculum based on my knowledge of the language.</p>
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+                <section class="github section" style="width: 940px">
+                    <div class="section-inner">
+                        <h2 class="heading">My GitHub</h2>
+                        <p>You can embed your GitHub contribution graph calendar using IonicaBizau's <a href="https://github.com/IonicaBizau/github-calendar" target="_blank">GitHub Calendar</a> widget.
+
+                        <div id="github-graph" class="github-graph">
+
+                        </div><!--//github-graph-->
+
+                        <p>You can also embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget.
+                        <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->
+                        <div id="ghfeed" class="ghfeed">
+                        </div><!--//ghfeed-->
+
+                    </div><!--//secton-inner-->
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-md-4 col-sm-12 col-xs-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Westminster, CA</li>
+                                <li><i class="fa fa-envelope-o"></i><span class="sr-only">Email:</span><a href="mailto:sandersd27@gmail.com" target="_blank">sandersd27@gmail.com</a></li>
+                                <li><i class="fa fa-phone"></i><span class="sr-only">Phone:</span>(714) 504-6074</li>
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//aside-->
+
+                <aside class="skills aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Skills</h2>
+                        <div class="content">
+
+                            <div class="skillset">
+
+                                <div class="item">
+                                    <h3 class="level-title">Meteor/Node.js<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">HTML, CSS, Javascript<span class="level-label">Expert</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="95%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Sleeping on Planes<span class="level-label">Guru</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="100%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">MongoDB<span class="level-label">Pro</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="75%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">Python<span class="level-label">Actively Learning</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="45%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <div class="item">
+                                    <h3 class="level-title">React<span class="level-label">Baby Steps</span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="25%">
+                                        </div>
+                                    </div><!--//level-bar-->
+                                </div><!--//item-->
+
+                                <p><a class="more-link" href="https://www.linkedin.com/in/dylanmsanders" target="_blank"><i class="fa fa-external-link"></i> More on LinkedIn</a></p>
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="testimonials aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Testimonials</h2>
+                        <div class="content">
+                            <div class="item">
+                                <blockquote class="quote">
+                                    <p><i class="fa fa-quote-left"></i>Dylan is the smartest, most dedicated person I know!</p>
+                                </blockquote>
+                                <p class="source"><span class="name">My Grandma</span><br /></p>
+                            </div><!--//item-->
+
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+
+                <aside class="blog aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <p>
+                          Follow me on <a href="https://medium.com/@DylanMSanders/" target="_blank">Medium!</a>
+                        </p>
+                        <div id="rss-feeds" class="content">
+                          <div class='item'>
+                            <h3 class="title"><a href="https://medium.com/meteor-js/new-meteor-package-of-the-week-series-69c2548958c6#.yp5n8n461" target="_blank">New "Meteor Package of the Week" Series!</a></h3>
+                            <div>
+                              <p>I’ll select one package that I either discovered and used for the first time, or one that has gained popularity on Atmosphere, and I’ll review it as well as demonstrate its use in a Meteor app.</p>
+                              <a class="more-link" href="https://medium.com/meteor-js/new-meteor-package-of-the-week-series-69c2548958c6#.yp5n8n461" target="_blank"><i class="fa fa-external-link"></i>Read more</a>
+                            </div>
+                          </div>
+                          <div class='item'>
+                            <h3 class="title"><a href="https://medium.com/all-about-meteorjs/interactive-meteor-security-demonstration-57c22dacab10#.6ak22jp2x" target="_blank">Interactive Meteor Security Demonstration</a></h3>
+                            <div>
+                              <p>In this post I'll let you actually see the insecurities and fuck with a database yourself…for science!</p>
+                              <a class="more-link" href="https://medium.com/all-about-meteorjs/interactive-meteor-security-demonstration-57c22dacab10#.6ak22jp2x" target="_blank"><i class="fa fa-external-link"></i>Read more</a>
+                            </div>
+                          </div>
+                          <div class='item'>
+                            <h3 class="title"><a href="https://medium.com/@DylanMSanders/what-the-heck-is-a-meteor-package-473e39cc3f0a#.1stxim6t2" target="_blank">What the Heck is a Meteor Package?</a></h3>
+                            <div>
+                              <p>This post will serve as a basic overview of what a package is when talking about the JavaScript framework Meteor.</p>
+                              <a class="more-link" href="https://medium.com/@DylanMSanders/what-the-heck-is-a-meteor-package-473e39cc3f0a#.1stxim6t2" target="_blank"><i class="fa fa-external-link"></i>Read more</a>
+                            </div>
+                          </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+                <aside class="list music aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Favorite coding music</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=O29YcBHpH5E" target="_blank">R. Kelly - Ignition Remix</a> (duh)</li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=Eu-xtzS_4rc" target="_blank">The Lone Below - Teach Me To Know</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=Ona42jz8w0k" target="_blank">Kanye West - Monster</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=x-5OX7CO26c" target="_blank">Alabama Shakes - Don't Wanna Fight</a></li>
+                                <li><i class="fa fa-headphones"></i> <a href="https://www.youtube.com/watch?v=CZa2lY9CFyM" target="_blank">Danny Brown - Dip</a></li>
+                            </ul>
+                            <p>
+                              And so so many more...
+                            </p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+
+
+            </div><!--//secondary-->
+        </div><!--//row-->
+    </div><!--//masonry-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script>
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/3.0.2/es6-promise.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/0.10.1/fetch.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html>
